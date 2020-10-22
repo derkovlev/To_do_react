@@ -1,0 +1,173 @@
+:root{
+  --principal : #ffe066;
+  --secondaire : #f25f5c;
+  --background :#247ba0;
+
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+@font-face {
+  font-family: "manuscrit";
+  src: url("./font/California.ttf") format("truetype");
+}
+
+body {
+  background-color: var(--background);
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 8em;
+  font-weight: bold;
+  font-family:Consolas;
+  text-decoration: underline;
+
+}
+
+div.menu{
+  text-align: end;
+  margin-right: 20px;
+  margin-bottom: 150px;
+}
+
+form{
+  padding: 5px;
+}
+
+form.log{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  border: black 3px solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: var(--principal);
+  
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.task{
+  margin-top: 10px;
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin-left: 30px;
+  overflow-y: scroll;
+  font-family: manuscrit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondaire);
+  border-radius: 10px;
+  
+}
+
+div.add_task{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: px;
+  width: 550px;
+  border: black 3px solid;
+  border-radius: 10px;
+  
+  height: 550px;
+  background-image:url(./images/post-it2.png);  
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  
+}
+
+button{
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px black;
+}
+button:hover{
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+  50%
+  {
+      transform:scale(1.1);
+  }
+ 
+}
+
+button.log_gestion{
+  margin-right: 4px;
+  padding: 4px;
+  font-weight: bold;
+  border: black 2px solid;
+ background-color: var(--principal);  
+}
+
+button.inbox{
+width: 100px;
+margin: auto; 
+margin-bottom: 5px;
+  
+}
+
+div.delete{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;  
+}
+
+button.action{
+  margin: 5px;
+  padding: 3px;
+  
+}
+
+input{
+  margin: auto;
+  margin-bottom: 5px;
+  
+}
+::placeholder{
+  text-align: center;
+}
+
+ul {
+  
+  list-style-type: none;
+  
+}
+
+li{
+  flex-direction: row;
+  font-size: 2em;
+}
+
+li.checkedLi {
+  text-decoration: line-through;
+  
+}
